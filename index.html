@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="auth-container">
+            <div id="login-container">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" id="login-username" placeholder="Nombre de usuario">
+                <input type="password" id="login-password" placeholder="Contraseña">
+                <button id="login-button">Iniciar Sesión</button>
+                <button id="show-register-button">Registrarse</button>
+            </div>
+            <div id="register-container" style="display: none;">
+                <h2>Registro</h2>
+                <input type="text" id="register-username" placeholder="Nombre de usuario">
+                <input type="password" id="register-password" placeholder="Contraseña">
+                <button id="register-button">Registrar</button>
+                <button id="back-to-login-button">Volver a Iniciar Sesión</button>
+            </div>
+        </div>
+        <div id="tasks-container" style="display: none;">
+            <h2>Mis Tareas</h2>
+            <input type="text" id="task-name" placeholder="Nombre de la tarea">
+            <input type="date" id="task-date">
+            <button id="add-task-button">Agregar Tarea</button>
+            <ul id="tasks-list"></ul>
+            <button id="logout-button">Cerrar Sesión</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

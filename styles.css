@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#login-button, button#register-button, button#add-task-button {
+    background-color: #007bff;
+}
+
+button#login-button:hover, button#register-button:hover, button#add-task-button:hover {
+    background-color: #0056b3;
+}
+
+button#show-register-button, button#back-to-login-button, button#logout-button {
+    background-color: #6c757d;
+}
+
+button#show-register-button:hover, button#back-to-login-button:hover, button#logout-button:hover {
+    background-color: #5a6268;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li span {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+li strong {
+    font-size: 16px;
+    color: #333333;
+}
+
+li small {
+    font-size: 14px;
+    color: #666666;
+}
+
+li div {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+.edit-button {
+    background-color: #28a745;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
